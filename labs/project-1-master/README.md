@@ -13,7 +13,9 @@ For this project we have used two of the provided data sets:
     - Source: (https://www.cde.ca.gov/ds/sp/ai/)
     - Data Dictionary: (https://www.cde.ca.gov/ds/sp/ai/reclayoutact19.asp)
     - We found the most relevant features for our project to be "AVGSCR..." columns 8 through 11. With these average scores we were able to estimate composite scores by county to compare with income levels.
->To complete our analysis we have included a data set for household incomes in California (this data is segmented by race, but a total is given for each county, making it useful without icluding race features):
+
+
+To complete our analysis we have included a data set for household incomes in California (this data is segmented by race, but a total is given for each county, making it useful without icluding race features):
 - Household income by race in California:
     - Size: 2494 rows, 9 columns
     - Source: (https://datausa.io/api/data?Geography=04000US06:children&measure=Household%20Income%20by%20Race,Household%20Income%20by%20Race%20Moe&drilldowns=Race)
