@@ -1,6 +1,6 @@
 # Executive Summary for Project 1
 ## Problem Statement
-SAT and ACT prep for high school students varies widely given different levels of access to materials, tutors and time available for extra studying, among others. It has been stated in media that households with higher incomes have unfair advantages in standarized testing. We are going to look at county level data for California and determine how much are SAT and ACT scores in California related to median household income levels?
+SAT and ACT prep for high school students varies widely given different levels of access to materials, tutors and time available for extra studying, among others. We are going to look at county level data for California and seek to answer how much are SAT and ACT scores in California related to median household income levels?
 ## Description of data
 For this project we have used two of the provided data sets:
 - SAT scores for California schools in 2019
@@ -20,14 +20,15 @@ To complete our analysis we have included a data set for household incomes in Ca
     - Size: 2494 rows, 9 columns
     - Source: (https://datausa.io/api/data?Geography=04000US06:children&measure=Household%20Income%20by%20Race,Household%20Income%20by%20Race%20Moe&drilldowns=Race)
     - We selected the column "Household Income by Race" and selected all races to produce a data set of median household incomes by counties in California, for 2019
-## Primary Findings & Conclusions
+## Conclusions & Recommendations
 Percentages of SAT takers in California with scores above benchmark, and ACT composite scores, are positively correlated to the median household income of the county where the test takers go to school.
 
 Among ACT scores, the Math average score showed the highest correlation to Household income.
 
-This can be seen as confirmation that households with higher incomes can expect to have children with higher SAT/ACT scores.
+We take this as evidence that higher income students have better access to prep material for these tests, and probably for the college application process as a whole, so the state's objective to eliminate standarized testing will disproportionately impact lower income students who perform above average considering lower access to prep.
 
 ## Next Steps
 This analysis can be furthered by including more granular data related to the selected data sets:
 - Actual SAT scores
 - More detailed income data per county (only the median was used in this project)
+- Income data by zip code that can then be assigned to school districts and repeat the analysis at the school district level
