@@ -42,6 +42,7 @@ Fill in this .py file with your solutions. Comments of the above instructions ar
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 # Read in the data: data/nba_rookies.csv
 rookies = pd.read_csv('./data/nba_rookies.csv')
@@ -57,8 +58,6 @@ rookies['TARGET_5Yrs'] = rookies['TARGET_5Yrs'].map(
         'Yes': 1
     }
 )
-rookies.head()
-rookies.columns
 # Model data using any classification algorithm you would like
 # If you do not know what to do here, feel free to fit a Logistic Regression model with default hyperparameters
 # But you are free to use any other model or methods that you know if you think that would be better!
@@ -68,11 +67,15 @@ y = rookies['TARGET_5Yrs']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42, stratify=y)
 
+ss = StandardScaler()
+
+X_train_sc = ss.fit_transform(X_train)
+X_test_sc = ss.transform(X_test)
 logreg = LogisticRegression()
-logreg.fit(X_train, y_train)
-logreg.score(X_test, y_test)
+logreg.fit(X_train_sc, y_train)
+logreg.score(X_test_sc, y_test)
 # Generate predictions on your test data
-preds = logreg.predict(X_test)
+preds = logreg.predict(X_test_sc)
 
 # Create a new DataFrame for predictions
 predictions = pd.DataFrame(preds)
