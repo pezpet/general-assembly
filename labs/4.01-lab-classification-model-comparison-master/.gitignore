@@ -1,7 +1,6 @@
 # OSX DS Store
 .DS_Store
 
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -91,8 +90,3 @@ ENV/
 
 # Rope project settings
 .ropeproject
-
-# Docker directories
-.local
-.ipython
-.jupyter
