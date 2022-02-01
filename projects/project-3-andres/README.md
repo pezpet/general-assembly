@@ -1,14 +1,9 @@
 # Executive Summary for Project 3
 ## Problem Statement
-The goal of this project is to use NLP to correctly predict what subreddit a post is from using text and other features from data collected from reddit using the pushshift API. We will collect posts from the subreddits **r/UnresolvedMysteries** and **r/UnsolvedMysteries* for this project.
+The goal of this project is to use NLP to correctly predict what subreddit a post is from using text and other features from data collected from reddit using the pushshift API. We will collect posts from the subreddits **r/UnresolvedMysteries** and **r/UnsolvedMysteries** for this project.
 
-Two models will be developed:
-- A Bayer classifier model
-- A KNN classifier model
-
-We will compare classification metrics fro both models to determine which has better performance, as measured by:
+We will compare classification metrics for our models to determine which has better performance, as measured by:
 - Accuracy
-- F1 score
 
 
 ## Description of data
