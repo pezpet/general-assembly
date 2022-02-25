@@ -4,10 +4,9 @@ Table 33: FOREIGN BORN POPULATION, DISTRIBUTED ACCORDING TO COUNTRY OF BIRTH, BY
 
 ## Problem Statement
 
-Is the foreign born population of each state in 1900 predictive of the state's most common household language (ex. English and Spanish)?
+Is the foreign born population of each state in 1900 predictive of the state's most common household language (ex. English and Spanish) in 2019?
 
 ## Description of the data
-
 
 ### 1900 Census Data
 Stacker Media has collected a data set from the 1900 US Census, cleaned it and made it available as a .csv file through GitHub.
